@@ -1,0 +1,125 @@
+.base{
+  background: #4A3B4E;
+}
+.reviews{
+  background-image:url("../img/Layer1@1X.png");
+  background-repeat: no-repeat;
+}
+
+.reviews__title{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 65px;
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: bold;
+  width: 256px;
+}
+
+.cards{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  margin-top: 30px;
+  width: 240px;
+  height: 166px;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__img{
+  padding-bottom: 30px;
+}
+
+.card__about{
+  text-align: center;
+  font-size: 16px;
+}
+
+.cards__more{
+  display: none;
+}
+.cards__line{
+  width: 280px;
+  border: 1px solid #645766;
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .reviews__title{
+    width: unset;
+    font-size: 31px;
+  }
+  .cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card{
+    height: 142px;
+    width: 315px;
+    margin-top: 54px;
+    justify-content: flex-end;
+  }
+  .card:nth-child(even){
+    margin-left: 90px;
+  }
+  .cards__more{
+    margin: 68px auto 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    color: #A291A5;
+    font-family: 'Lato', sans-serif;
+  }
+  .cards__line{
+    width: 699px;
+  }
+}
+
+@media (min-width: 993px) {
+  .reviews__title{
+    font-size: 35px;
+    width: unset;
+    padding-top: 98px;
+  }
+  .cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card{
+    height: 142px;
+    width: 315px;
+    margin-top: 95px;
+    justify-content: flex-end;
+  }
+  .card:nth-of-type(3n-1){
+     margin-left: 2%;
+   }
+  .card:nth-of-type(3n){
+    margin-left: 2%;
+  }
+  .cards__more{
+    width: 857px;
+  }
+  .cards__more{
+    margin: 118px auto 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    color: #A291A5;
+    font-family: 'Lato', sans-serif;
+  }
+  .cards__line{
+    width: 780px;
+  }
+
+}

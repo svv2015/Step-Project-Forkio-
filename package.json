@@ -21,5 +21,10 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-js-minify": "^0.0.3"
   }
 }

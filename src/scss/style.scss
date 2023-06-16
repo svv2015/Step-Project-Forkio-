@@ -1,9 +1,10 @@
 @import "reset";
 @import "mixins";
 @import "editor";
-
-
-
+@import "reviews";
+@import "about";
+@import "header";
+@import "pricing";
 
 body {
   min-width: 320px;
