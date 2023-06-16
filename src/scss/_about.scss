@@ -8,6 +8,9 @@
   align-items: center;
   flex-direction: column;
 }
+.about-div {
+  max-width: 1200px;
+}
 
 .about__title{
   margin-top: 33px;
@@ -34,6 +37,7 @@
 .button-text{
   position: absolute;
   top: 625px;
+  left: calc(50% - 111px)
 }
 .button-text__button{
   @include purple-button;

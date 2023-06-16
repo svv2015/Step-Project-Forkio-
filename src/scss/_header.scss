@@ -1,11 +1,18 @@
 @import "mixins";
 
 .header {
-  height: 103px;
   background: #27262A;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-around;
+}
+.header-div {
+  height: 103px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
 .logo-block{
   display: flex;
@@ -59,6 +66,7 @@
   position: absolute;
   top: 42px;
   right: 23px;
+  left: 85%;
   cursor: pointer;
   opacity: 0;
   margin: 0;
@@ -140,15 +148,15 @@
 }
 
 @media (min-width: 481px) and (max-width: 992px) {
-  .header{
+  .header-div{
     padding-top: 20px;
     height: 118px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .logo-block{
-    margin-left:20px;
-    margin-right: 35%;
+    margin-left: 20px;
+    margin-right: 25%;
   }
   .logo-block__logo-text{
     display: inline-block;
@@ -160,7 +168,7 @@
     display: none;
   }
   .header__buy-button_purple{
-    margin-right: 20px;
+    margin-right: 25px;
   }
   .nav{
     padding: 0 0 20px;
@@ -171,7 +179,7 @@
     position: unset;
   }
   .nav__list{
-    width: 481px;
+    max-width: 481px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -191,7 +199,7 @@
 }
 
 @media(min-width: 993px) {
-  .header{
+  .header-div{
     height: 100px;
   }
   .logo-block{
