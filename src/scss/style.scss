@@ -1,0 +1,17 @@
+@import "reset";
+@import "mixins";
+@import "editor";
+
+
+
+
+body {
+  min-width: 320px;
+  max-width: 1200px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.min-and-max{
+  min-width: 320px;
+  max-width: 1200px;
+}
