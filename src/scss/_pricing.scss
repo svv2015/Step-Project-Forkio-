@@ -1,0 +1,165 @@
+.app-pricing {
+  background: url("../img/Layer\ 2\ 1.png") no-repeat;
+  background-size: cover;
+  padding: 80px 15px;
+}
+
+.app-pricing__title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.app-pricing__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-pricing__item {
+  width: 260px;
+  height: 460px;
+  background: rgba(255, 255, 255, 0.11);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.app-pricing__item-title {
+  display: inline-block;
+  width: 100%;
+  background: rgba(155, 155, 155, 0.35);
+  padding: 13.5% 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 32px;
+}
+
+.app-pricing__item-price {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.app-pricing__item-price span {
+  font-weight: bold;
+}
+
+.app-pricing__item-time {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #9a939b;
+  margin-bottom: 40px;
+}
+
+.app-pricing__item-separator {
+  width: 60px;
+  height: 5px;
+  background: #8d81ac;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.app-pricing__item-descr {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 68px;
+}
+
+.app-pricing__item-descr p {
+  width: 215px;
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.app-pricing__item-link {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 20px;
+  background: rgba(155, 155, 155, 0.35);
+}
+.app-pricing__item.activ-item {
+  width: 290px;
+  height: 560px;
+  background: #463048;
+  opacity: 0.84;
+}
+// .app-pricing__item:hover {
+//   width: 290px;
+//   height: 560px;
+//   background: rgba(62, 62, 62, 0.61);
+// }
+
+.app-pricing__item.activ-item .app-pricing__item-price {
+  font-size: 82px;
+}
+
+// .app-pricing__item:hover .app-pricing__item-time {
+//   margin-bottom: 50px;
+// }
+
+// .app-pricing__item:hover .app-pricing__item-separator {
+//   margin-bottom: 40px;
+// }
+
+// .app-pricing__item:hover .app-pricing__item-descr {
+//   margin-bottom: 115px;
+// }
+
+// .app-pricing__item.activ-item {
+//   background: #685967;
+// }
+
+// .app-pricing__item:hover,
+// .app-pricing__item-link:hover,
+// .app-pricing__item:hover .app-pricing__item-price,
+// .app-pricing__item:hover .app-pricing__item-time,
+// .app-pricing__item:hover .app-pricing__item-separator,
+// .app-pricing__item:hover .app-pricing__item-descr {
+//   transition: 200ms;
+// }
+
+
+@media (min-width: 481px) and (max-width: 992px) {
+
+  .app-pricing {
+    padding: 80px 20px;
+  }
+
+  .app-pricing__item {
+    margin: 22px 26px;
+  }
+
+  .app-pricing__container {
+    justify-content: space-evenly;
+  }
+
+}
+
+@media(min-width: 993px) {
+  .app-pricing__container {
+    max-width: 1200px;
+  }
+  .app-pricing__item {
+    margin: 22px 5px;
+    width: 225px;
+  }
+  .app-pricing__item.activ-item {
+    width: 240px;
+  }  
+}

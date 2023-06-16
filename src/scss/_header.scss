@@ -1,0 +1,244 @@
+@import "mixins";
+
+.header {
+  height: 103px;
+  background: #27262A;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo-block{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-block__logo{
+  cursor: pointer;
+  width: 43px;
+  height: 41px;
+  background-image: url("../img/navbar-logo@1X.png");
+}
+.logo-block:hover .logo-block__logo{
+  background-image: url("../img/logo-hover@1X.png");
+}
+
+.logo-block__logo-text{
+  display: none;
+  font-weight: 700;
+  color: #8D81AC;
+  padding-left: 15px;
+  font-size: 24px;
+}
+
+.logo-block:hover .logo-block__logo-text{
+  color: #FFFFFF;
+}
+
+.header__buy-button_purple {
+@include purple-button;
+}
+.header__buy-button_purple:hover{
+  background: #FFFFFF;
+  color: #8D81AC;
+}
+.button-text__button:hover{
+  background: #FFFFFF;
+  color: #8D81AC;
+}
+.hamburger {
+  width: 26px;
+  height: 21px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.header__toggler {
+  height: 21px;
+  width: 26px;
+  position: absolute;
+  top: 42px;
+  right: 23px;
+  cursor: pointer;
+  opacity: 0;
+  margin: 0;
+}
+
+
+.header__toggler:checked ~ .nav {
+  transform: translateX(0%);
+}
+
+.hamburger__lines {
+  position: relative;
+  vertical-align: middle;
+  background: white;
+}
+
+.hamburger__lines,
+.hamburger__lines::after,
+.hamburger__lines::before {
+  display: inline-block;
+  width: 23px;
+  height: 1px;
+  border: 0.02px solid #E5E3E3;
+  border-radius: 20px;
+  background: #E5E3E3;
+}
+
+.hamburger__lines:before {
+  width: 18px;
+}
+
+.hamburger__lines::after,
+.hamburger__lines::before {
+  content: '';
+  position: absolute;
+  left: 0
+}
+
+.hamburger__lines::before {
+  top: -8px;
+  left: 4px;
+}
+
+.hamburger__lines::after {
+  bottom: -8px;
+  left: -1px;
+}
+
+.nav{
+  position: absolute;
+  transform: translateX(-1000%);
+  transition: transform 1s;
+  background: #333333;
+  width: 290px;
+  top: 103px;
+}
+
+.nav__list{
+  font-size: 19px;
+}
+
+.nav__list-element{
+  padding: 35px 0;
+  border-bottom: 1px solid #3B3B3B;
+}
+.nav__list-href{
+  width: 290px;
+  padding-left: 35px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.nav__list-element:hover .nav__list-href{
+  color: #8D81AC;
+  border-left: 6px solid #8D81AC;
+}
+
+.show{
+  display: none;
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .header{
+    padding-top: 20px;
+    height: 118px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .logo-block{
+    margin-left:20px;
+    margin-right: 35%;
+  }
+  .logo-block__logo-text{
+    display: inline-block;
+  }
+  .hamburger{
+    display: none;
+  }
+  .header__toggler{
+    display: none;
+  }
+  .header__buy-button_purple{
+    margin-right: 20px;
+  }
+  .nav{
+    padding: 0 0 20px;
+    background: unset;
+    width: 481px;
+    margin: 0 auto;
+    transform: unset;
+    position: unset;
+  }
+  .nav__list{
+    width: 481px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav__list-element{
+    padding: unset;
+    border: unset;
+  }
+  .nav__list-href{
+    padding: unset;
+    color: #8D81AC;
+  }
+  .nav__list-element:hover .nav__list-href{
+    border: unset;
+    color: #FFFFFF;
+  }
+}
+
+@media(min-width: 993px) {
+  .header{
+    height: 100px;
+  }
+  .logo-block{
+    margin-left: 70px;
+  }
+  .logo-block__logo-text{
+    display: inline-block;
+  }
+
+  .hide-btn{
+    display: none;
+  }
+  .show{
+    display: inline-block;
+    margin-right: 70px;
+  }
+  .hamburger{
+    display: none;
+  }
+  .header__toggler{
+    display: none;
+  }
+  .nav{
+    margin: 0 48px 0 auto;
+    background: unset;
+    width: 517px;
+    transform: unset;
+    position: unset;
+  }
+  .nav__list{
+    width: 517px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav__list-element{
+    padding: unset;
+    border: unset;
+  }
+  .nav__list-href{
+    font-size: 16px;
+    padding: unset;
+    color: #8D81AC;
+    font-weight: bold;
+  }
+  .nav__list-element:hover .nav__list-href{
+    border: unset;
+    color: #FFFFFF;
+  }
+}
