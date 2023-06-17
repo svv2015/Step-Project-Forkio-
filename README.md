@@ -1,7 +1,7 @@
 # Project Forkio
 Список використаних технологій: HTML, GULP, GIT, SCSS-Adaptive
-Студент 1: Сторожик Володимир https://gitlab.com/svv2015/project-forkio.git;
-Студент 2: Крупін Станіслав https://gitlab.com/svv2015/project-forkio.git
+Студент 1: Сторожик Володимир (https://gitlab.com/svv2015/project-forkio.git);
+Студент 2: Крупін Станіслав (https://gitlab.com/svv2015/project-forkio.git);
 Студент 1 зверстав шапку сайту з верхнім меню, зверстав секцію People Are Talking About Fork та Fork Subscription Pricing.
 Студент 2 зверстав блок Revolutionary Editor та сукцію Here is what you get.
 
